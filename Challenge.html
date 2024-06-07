@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Super Wordlist</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="Challenge.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <audio src="BGM.mp3" autoplay id="bgmusic"></audio>
+    <div class="wrapper" style="display: none" id="stickman-canvas">
+      <div class="categoryname" id="catagoryName"></div>
+      <h3 id="difficulty"></h3>
+      <div class="livesleft" id="mylives"></div>
+      <img
+        src="img/normal3.gif"
+        alt="Dancing Mushroom"
+        style="width: 350px; height: 330px"
+        id="gif"
+      />
+      <div id="hold"></div>
+
+      <div id="buttons"></div>
+
+      <div class="clue" id="clue"></div>
+      <div class="container">
+        <button id="hint">Hint</button>
+      </div>
+    </div>
+    <div id="start-up">
+      <div id="start" style="display: block">
+        <a href="#" class="modal-button" id="easy" onclick="startEasy()"
+          >EASY</a
+        >
+        <a href="#" class="modal-button" id="normal" onclick="startNormal()"
+          >NORMAL</a
+        >
+        <a href="#" class="modal-button" id="hard" onclick="startHard()"
+          >HARD</a
+        >
+      </div>
+    </div>
+    <div id="game-over" style="display: none">
+      <h2 id="Score"></h2>
+      <a href="#" id="hi">Restart</a>
+      <a href="#" id="back">Exit</a>
+    </div>
+  </body>
+  <script src="js/Challenge.js"></script>
+</html>

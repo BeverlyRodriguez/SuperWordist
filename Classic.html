@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Super Wordist</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="Classic.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <audio src="music/BGM.mp3" autoplay id="bgmusic" volume="0.1;"></audio>
+    <div class="wrapper" style="display: none" id="stickman-canvas">
+      <div class="categoryname" id="catagoryName"></div>
+      <div class="livesleft" id="mylives"></div>
+      <img
+        src="img/dance.gif"
+        alt="Dancing Mushroom"
+        style="width: 300px; height: 300px"
+        id="gif"
+      />
+      <div id="hold"></div>
+
+      <div id="buttons"></div>
+
+      <div class="clue" id="clue"></div>
+      <div class="container">
+        <button id="hint">Hint</button>
+      </div>
+    </div>
+    <div id="start-up">
+      <div id="start" style="display: block">
+        <a href="#" onclick="startGame()">Classic</a>
+        <a href="Challenge.html">Challenge</a>
+      </div>
+    </div>
+    <div id="game-over" style="display: none">
+      <a href="#" id="hi">Restart</a>
+      <a href="#" id="back">Exit</a>
+    </div>
+  </body>
+  <script src="js/Classic.js"></script>
+</html>
